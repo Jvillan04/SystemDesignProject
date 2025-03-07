@@ -1,0 +1,118 @@
+body {
+    background: url('../img/Kirby With Knife.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: red;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    text-align: center;
+    /*Space the text out*/
+    letter-spacing: 20px;
+}
+.content {
+    margin: 100px;
+}
+.hierarchy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    position: relative;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    font-size: 50px;
+
+}
+button {
+    border: 3px dashed red;
+    padding: 80px;
+    position: absolute;
+    background-color: rgba(0, 255, 34, 0.5);
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-family: Comic Sans MS, cursive, sans-serif;
+    color: red;
+
+}
+.hierarchy button {
+    font-size: 10px;
+}
+.hierarchy button:nth-child(1) {
+    top: 10vh;
+    left: 5vw;
+}
+.hierarchy button:nth-child(2) {
+    top: 40vh;
+    left: 70vw;
+}
+.hierarchy button:nth-child(3) {
+    top: 70vh;
+    left: 10vw;
+    right: 40vw;
+    font-size: 30px;
+}
+.hierarchy button:nth-child(4) {
+    top: 85vh;
+    left: 80vw;
+}
+.hierarchy button:nth-child(5) {
+    top: 50vh;
+    left: 5vw;
+    bottom: 50vh;
+    text-decoration: underline;
+    font-size: 20px;
+}
+button:hover {
+    background-color: rgba(255, 0, 8, 0.8);
+    transition: 1s;
+}
+
+.links {
+    font-size: 24px;
+    font-weight: bold;
+}
+.attention {
+    font-size: 200px;
+    text-decoration: underline;
+    animation: blink 0.5s infinite alternate;
+}
+.paragraph-attention {
+    font-size: 50px;
+    animation: blink 0.5s infinite alternate, jiggle 0.2s infinite;
+}
+.bye {
+    font-size: 30px;
+    animation: jiggle 0.2s infinite, slant 0.5s infinite alternate;
+}
+@keyframes jiggle {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+}
+@keyframes blink {
+    from { color: yellow; }
+    to { color: red; }
+}
+@keyframes slant {
+    0%, 100% { transform: skewX(0); }
+    50% { transform: skewX(10deg); }
+}
+
+/* Add CSS for the raton and carlos images*/
+.carlos {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+.raton {
+    position: absolute;
+    top: 40vh;
+    right: 10vw;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}

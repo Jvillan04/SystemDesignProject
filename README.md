@@ -5,6 +5,8 @@ Making a very bad website.
 
 This uses a bit of javascript to start a web server using express.
 
+First Clone the repository.
+
 To install the dependencies, run `npm install`.
 
 After run `npm start` to start the server.
